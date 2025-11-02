@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "nba"
 version = "0.1.0"
 description = "Python project used for NBA statistics analysis"
+readme = "README.md"
 
 [tool.setuptools]
 packages = ["nba"]

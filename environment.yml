@@ -6,9 +6,11 @@ dependencies:
   - polars
   - pandas
   - duckdb
-  - kaggle
   - sqlite
   - seaborn
   - pre-commit
   - ipykernel
   - click
+  - pip
+  - pip:
+    - kaggle
