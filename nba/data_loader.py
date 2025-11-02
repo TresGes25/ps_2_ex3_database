@@ -49,6 +49,8 @@ def kaggle_download_data(dataset: str) -> None:
     print(f"Data has been downloaded to {data_path}")
 
 
+# We used the click options to run data_loader from the terminal,
+# passing arguments (dataset name, username, API key) to the script
 @click.command()  # type: ignore
 @click.option(  # type: ignore
     "--dataset",
@@ -74,5 +76,8 @@ def main(
     kaggle_download_data(dataset=dataset)
 
 
+# These lines mean that main() will run if the script is executed directly,
+# and not if data_loader.py is imported as a module on another script
+# module name is __main__ if script run directly; otherwise, data_loader
 if __name__ == "__main__":
     main()
